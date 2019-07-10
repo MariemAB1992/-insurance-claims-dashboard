@@ -2,11 +2,7 @@
 
 server <- function(input, output) {
  
-  
- 
-  
-  
-  #macro des fitres: 
+   #macro des fitres: 
   macro_dat <- function(ag,dat,dat1){
     DATA$date<-as.Date(DATA$date,format = "%d/%m/%Y")
     if((ag =="ALL")&((length(dat)==0))&(length(dat1)==0)){
@@ -67,10 +63,7 @@ server <- function(input, output) {
     value2<-sqldf("select bonmal, count(*) as totale  from base group by bonmal")
     
     return(value2)} 
-  
-  
-  
-  
+
   
   #macro des boxes
   #total contrats
@@ -257,11 +250,7 @@ server <- function(input, output) {
                                  line.type = "solid"
                  )
                })
-  
-  
-  
-  
-  
+
   
 }
 
